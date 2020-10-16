@@ -7,7 +7,7 @@
 #
 
 
-name: 编译OpenWrt固件
+name: 编译Lienol_x86_64
 
 on:
   workflow_dispatch:
