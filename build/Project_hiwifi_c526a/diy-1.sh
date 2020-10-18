@@ -6,9 +6,7 @@
 
 
 #源码里面几乎囊括了所有插件，所以基本不需要添加插件了
-git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/lean/luci-theme-opentopd
-git clone https://github.com/sirpdboy/luci-app-advanced.git package/lean/luci-app-advanced
-git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
+sed -i '$a src-git opentopd https://github.com/sirpdboy/luci-theme-opentopd' feeds.conf.default
 
 #rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  #新的argon主题
 #全新的[argon-主题]此主题玩法很多,这里看说明【https://github.com/jerrykuku/luci-theme-argon/blob/18.06/README_ZH.md】
