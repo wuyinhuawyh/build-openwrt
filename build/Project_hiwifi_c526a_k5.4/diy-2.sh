@@ -3,7 +3,7 @@
 #
 
 # 修改openwrt登陆地址,把下面的192.168.2.2修改成你想要的就可以了
-sed -i 's/192.168.1.1/192.168.168.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.68.1/g' package/base-files/files/bin/config_generate
 
 # 修改主机名字，把OpenWrt-123修改你喜欢的就行（不能使用中文）
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='Hiwifi-c526a'' package/lean/default-settings/files/zzz-default-settings
@@ -38,3 +38,6 @@ sed -i 's/"USB 打印服务器"/"打印服务"/g' package/lean/luci-app-usb-prin
 sed -i 's/"Web 管理"/"Web管理"/g' package/lean/luci-app-webadmin/po/zh-cn/webadmin.po
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 #sed -i 's/"带宽监控"/"监视"/g' feeds/luci/applications/luci-app-nlbwmon/po/zh-cn/nlbwmon.po
+
+sed -i 's/"services"/"control"/g' /package/lean/luci-app-accesscontrol/luasrc/controller/mia.lua
+sed -i 's/"network"/"control"/g' /package/ctcgfw/luci-app-appfilter/luasrc/controller/appfilter.lua
