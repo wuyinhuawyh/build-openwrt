@@ -39,5 +39,5 @@ sed -i 's/"Web 管理"/"Web管理"/g' package/lean/luci-app-webadmin/po/zh-cn/we
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 #sed -i 's/"带宽监控"/"监视"/g' feeds/luci/applications/luci-app-nlbwmon/po/zh-cn/nlbwmon.po
 
-sed -i 's/"services"/"control"/g' /package/lean/luci-app-accesscontrol/luasrc/controller/mia.lua
-sed -i 's/"network"/"control"/g' /package/ctcgfw/luci-app-appfilter/luasrc/controller/appfilter.lua
+sed -i 's/"services"/"control"/g' package/lean/luci-app-accesscontrol/luasrc/controller/mia.lua
+sed -i 's/"network"/"control"/g' package/ctcgfw/luci-app-appfilter/luasrc/controller/appfilter.lua
