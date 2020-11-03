@@ -25,7 +25,7 @@ rm -rf package/lienol/luci-app-timecontrol
 
 # 修改编译错误包文件
 sed -i 's/+strongswan +strongswan-minimal/+strongswan-minimal/g' package/lean/luci-app-ipsec-vpnd/Makefile
-#sed -i 's/+zerotier//g' package/lean/luci-app-zerotier/Makefile
+sed -i 's/+zerotier//g' package/lean/luci-app-zerotier/Makefile
 
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
