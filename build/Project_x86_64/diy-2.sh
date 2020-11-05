@@ -28,7 +28,7 @@ sed -i 's/+strongswan +strongswan-minimal/+strongswan-minimal/g' package/lean/lu
 sed -i 's/+zerotier//g' package/lean/luci-app-zerotier/Makefile
 
 # 修改可道云包文件
-sed -i 's/ +php7-mod-curl / +php7-mod-curl +php7-mod-dom +php7-mod-xmlwriter +php7-mod-xmlreader +php7-mod-intl +php7-mod-ctype +php7-mod-simplexml +libxml /g' package/lean/luci-app-kodexplorer/Makefile
+sed -i 's/ +php7-mod-curl / +php7-mod-curl +php7-mod-dom +php7-mod-xmlwriter +php7-mod-xmlreader +php7-mod-intl +php7-mod-ctype +php7-mod-simplexml +libxml2 /g' package/lean/luci-app-kodexplorer/Makefile
 
 
 
