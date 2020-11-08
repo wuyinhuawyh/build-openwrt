@@ -24,6 +24,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 #sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' target/linux/x86/Makefile
 sed -i 's/PKG_VERSION:=7.4.7/PKG_VERSION:=7.2.34/g' feeds/packages/lang/php7/Makefile
+sed -i 's/PKG_HASH:=53558f8f24cd8ab6fa0ea252ca8198e2650160649681ce5230c1df1dc2b52faf/PKG_HASH:=409e11bc6a2c18707dfc44bc61c820ddfd81e17481470f3405ee7822d8379903/g' feeds/packages/lang/php7/Makefile
 
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
