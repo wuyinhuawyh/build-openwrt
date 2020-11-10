@@ -20,11 +20,12 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # 替换https-dns-proxy.init文件,解决用LEDE源码加入passwall编译固件后DNS转发127.0.0.1#5053和12.0.0.1#5054问题
 #curl -fsSL  https://raw.githubusercontent.com/Lienol/openwrt-packages/dev-19.07/net/https-dns-proxy/files/https-dns-proxy.init > feeds/packages/net/https-dns-proxy/files/https-dns-proxy.init
 
-# 修改内核及包版本
+# 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' target/linux/x86/Makefile
-#sed -i 's/PKG_VERSION:=7.4.7/PKG_VERSION:=7.2.34/g' feeds/packages/lang/php7/Makefile
-#sed -i 's/PKG_HASH:=53558f8f24cd8ab6fa0ea252ca8198e2650160649681ce5230c1df1dc2b52faf/PKG_HASH:=409e11bc6a2c18707dfc44bc61c820ddfd81e17481470f3405ee7822d8379903/g' feeds/packages/lang/php7/Makefile
+sed -i 's/LINUX_VERSION-5.4 = .72/LINUX_VERSION-5.4 = .75/g' include/kernel-version.mk
+sed -i 's/LINUX_KERNEL_HASH-5.4.72 = 0e24645bd56fe5b55a7a662895f5562c103d71b54d097281f0c9c71ff22c1172/LINUX_KERNEL_HASH-5.4.75 = D2466FD6EB5433E7BF287B617B11B2640C65A7EA93A57EB7A80D7F537CBC1470/g' include/kernel-version.mk
+
 
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
