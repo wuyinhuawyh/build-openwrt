@@ -23,8 +23,8 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' target/linux/x86/Makefile
-#sed -i 's/LINUX_VERSION-5.4 = .72/LINUX_VERSION-5.4 = .75/g' include/kernel-version.mk
-#sed -i 's/LINUX_KERNEL_HASH-5.4.72 = 0e24645bd56fe5b55a7a662895f5562c103d71b54d097281f0c9c71ff22c1172/LINUX_KERNEL_HASH-5.4.75 = D2466FD6EB5433E7BF287B617B11B2640C65A7EA93A57EB7A80D7F537CBC1470/g' include/kernel-version.mk
+sed -i 's/LINUX_VERSION-5.4 = .72/LINUX_VERSION-5.4 = .75/g' include/kernel-version.mk
+sed -i 's/LINUX_KERNEL_HASH-5.4.72 = 0e24645bd56fe5b55a7a662895f5562c103d71b54d097281f0c9c71ff22c1172/LINUX_KERNEL_HASH-5.4.75 = D2466FD6EB5433E7BF287B617B11B2640C65A7EA93A57EB7A80D7F537CBC1470/g' include/kernel-version.mk
 
 
 
