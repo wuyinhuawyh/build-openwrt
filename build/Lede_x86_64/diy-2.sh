@@ -23,14 +23,15 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 # 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' target/linux/x86/Makefile
-sed -i 's/LINUX_VERSION-5.4 = .72/LINUX_VERSION-5.4 = .75/g' include/kernel-version.mk
-sed -i 's/LINUX_KERNEL_HASH-5.4.72 = 0e24645bd56fe5b55a7a662895f5562c103d71b54d097281f0c9c71ff22c1172/LINUX_KERNEL_HASH-5.4.75 = D2466FD6EB5433E7BF287B617B11B2640C65A7EA93A57EB7A80D7F537CBC1470/g' include/kernel-version.mk
+#sed -i 's/LINUX_VERSION-5.4 = .72/LINUX_VERSION-5.4 = .75/g' include/kernel-version.mk
+#sed -i 's/LINUX_KERNEL_HASH-5.4.72 = 0e24645bd56fe5b55a7a662895f5562c103d71b54d097281f0c9c71ff22c1172/LINUX_KERNEL_HASH-5.4.75 = D2466FD6EB5433E7BF287B617B11B2640C65A7EA93A57EB7A80D7F537CBC1470/g' include/kernel-version.mk
 
 
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
 sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
 sed -i 's/cbi("qbittorrent"),_("qBittorrent")/cbi("qbittorrent"),_("BT下载")/g' package/lean/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
+sed -i 's/"control"/"services"/g' package/lean/luci-app-control-timewol/luasrc/controller/timewol.lua
 sed -i 's/"aMule设置"/"电驴下载"/g' package/lean/luci-app-amule/po/zh-cn/amule.po
 sed -i 's/"网络存储"/"存储"/g' package/lean/luci-app-amule/po/zh-cn/amule.po
 sed -i 's/"网络存储"/"存储"/g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
@@ -42,3 +43,4 @@ sed -i 's/"网络存储"/"存储"/g' package/lean/luci-app-usb-printer/po/zh-cn/
 sed -i 's/"Web 管理"/"Web管理"/g' package/lean/luci-app-webadmin/po/zh-cn/webadmin.po
 sed -i 's/"管理权"/"改密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i 's/"带宽监控"/"监视"/g' feeds/luci/applications/luci-app-nlbwmon/po/zh-cn/nlbwmon.po
+
