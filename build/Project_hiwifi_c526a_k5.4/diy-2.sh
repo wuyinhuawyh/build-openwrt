@@ -27,9 +27,8 @@ sed -i 's/+strongswan +strongswan-minimal /+strongswan-minimal /g' package/lean/
 sed -i 's/+zerotier//g' package/lean/luci-app-zerotier/Makefile
 
 # 修改内核版本
-
-sed -i 's/LINUX_VERSION-5.4 = .75/LINUX_VERSION-5.4 = .77/g' include/kernel-version.mk
-sed -i 's/LINUX_KERNEL_HASH-5.4.75 = d2466fd6eb5433e7bf287b617b11b2640c65a7ea93a57eb7a80d7f537cbc1470/LINUX_KERNEL_HASH-5.4.77 = a3e03e6970240dddc8174bf9f49b56d774c40125eabe1582d2ebe85b01addbf7/g' include/kernel-version.mk
+#sed -i 's/LINUX_VERSION-5.4 = .75/LINUX_VERSION-5.4 = .77/g' include/kernel-version.mk
+#sed -i 's/LINUX_KERNEL_HASH-5.4.75 = d2466fd6eb5433e7bf287b617b11b2640c65a7ea93a57eb7a80d7f537cbc1470/LINUX_KERNEL_HASH-5.4.77 = a3e03e6970240dddc8174bf9f49b56d774c40125eabe1582d2ebe85b01addbf7/g' include/kernel-version.mk
 
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
