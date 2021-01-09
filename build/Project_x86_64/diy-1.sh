@@ -14,6 +14,8 @@ git clone https://github.com/garypang13/luci-app-eqos.git package/lean/luci-app-
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns  #smartdns DNS加速
 git clone https://github.com/jerrykuku/node-request.git package/lean/node-request  #京东签到依赖
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/lean/luci-app-jd-dailybonus  #京东签到
+git clone https://github.com/awesome-openwrt/luci-app-control-timewol.git package/lean/luci-app-control-timewol #定时唤醒
+git clone https://github.com/lisaac/luci-app-dockerman.git package/lean/luci-app-dockerman  #docker管理
 
 
 
